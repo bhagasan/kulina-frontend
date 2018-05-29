@@ -1,0 +1,65 @@
+.nav{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 50px;
+  z-index: 99;
+  padding: 30px 50px;
+  background: $color--white;
+  @include bp-768{
+    padding: 20px;
+    min-height: 30px;
+    .logo{
+      img{
+        width: 100px;
+      }
+    }
+  }
+  a{
+    color: $color--orange;
+  }
+  &--fixed{
+    position: fixed;
+  }
+  &--transparent{
+    background: transparent;
+    a{
+      color: $color--white;
+    }
+  }
+
+  &__container{
+    &--kulina{
+      display: flex;
+      width: 100%;
+      .block{
+        width: 100%;
+      }
+    }
+  }
+  .logo{
+    max-width: 240px;
+  }
+  .menu{
+    ul{
+      float: right;
+      margin-right: 30px;
+      li{
+        // align-content: flex-end;
+        display: inline-block;
+        margin: auto 15px;
+        &:first-child{margin-left: 0}
+        &:last-child{margin-right: 0}
+        &.active{
+          a{
+            font-weight: bold;            
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}

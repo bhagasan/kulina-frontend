@@ -1,0 +1,27 @@
+.btn{
+  padding: 15px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  &--primary{
+    background: $color--orange;
+    color: $color--white;
+  }
+  &--burger{
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-size: 100%;
+    padding: 0;
+    img{
+      width: 100%;
+    }
+    @include bp-768{
+      top: 20px;
+      display: block;
+    }
+  }
+}

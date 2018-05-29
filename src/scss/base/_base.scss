@@ -1,0 +1,22 @@
+$color--black: #373D3F;
+$color--white: #ffffff;
+$color--orange: #FD7314;
+$color--grey: #737373;
+
+*{box-sizing: border-box;}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+  color: $color--black;
+}
+h1, h2, h3, h4, h5, h6{font-family: 'Roboto-Bold'}
+ul{list-style: none}
+a{text-decoration: none}
+section{background: white}
+p{color: $color--black;}
+button{
+  outline: none;
+  border: 0;
+}
+footer{background: $color--white}
