@@ -7,6 +7,11 @@
   z-index: 99;
   padding: 30px 50px;
   background: $color--white;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.26);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.26);
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.26);
+  transition-duration: .3s;
+  
   @include bp-768{
     padding: 20px;
     min-height: 30px;
@@ -24,6 +29,7 @@
   }
   &--transparent{
     background: transparent;
+    box-shadow: none;
     a{
       color: $color--white;
     }
